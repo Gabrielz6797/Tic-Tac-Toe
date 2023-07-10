@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Tic-Tac-Toe game</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="client.js"></script>
+  </head>
+  <body onload="startGame()">
+    <div class="wrapper">
+      <div class="welcome">
+        <h1>Choose a box and press Play</h1>
+      </div>
+      <table class="tic-tac-toe" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td class="cell" id="0 0">
+              <input type="radio" name="cell" value="0 0" />
+            </td>
+            <td class="cell vertical-border" id="0 1">
+              <input type="radio" name="cell" value="0 1" />
+            </td>
+            <td class="cell" id="0 2">
+              <input type="radio" name="cell" value="0 2" />
+            </td>
+          </tr>
+          <tr>
+            <td class="cell horizontal-border" id="1 0">
+              <input type="radio" name="cell" value="1 0" />
+            </td>
+            <td class="cell center-border" id="1 1">
+              <input type="radio" name="cell" value="1 1" />
+            </td>
+            <td class="cell horizontal-border" id="1 2">
+              <input type="radio" name="cell" value="1 2" />
+            </td>
+          </tr>
+          <tr>
+            <td class="cell" id="2 0">
+              <input type="radio" name="cell" value="2 0" />
+            </td>
+            <td class="cell vertical-border" id="2 1">
+              <input type="radio" name="cell" value="2 1" />
+            </td>
+            <td class="cell" id="2 2">
+              <input type="radio" name="cell" value="2 2" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="center-buttons" id="btn">
+        <button
+          onclick="makeMove(
+        parseInt(document.querySelector('input[type=\'radio\'][name=\'cell\']:checked').value.split(' ')[0]),
+        parseInt(document.querySelector('input[type=\'radio\'][name=\'cell\']:checked').value.split(' ')[1])
+        );"
+        >
+          Play
+        </button>
+      </div>
+    </div>
+    <template id="after-game-btns">
+      <form action="./game.html">
+        <button>Play again</button>
+      </form>
+      <form action="./index.html">
+        <button>Go back to home</button>
+      </form>
+    </template>
+  </body>
+</html>

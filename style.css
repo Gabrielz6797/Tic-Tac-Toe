@@ -1,0 +1,114 @@
+@import url(//fonts.googleapis.com/css?family=Roboto&display=swap);
+@import url(//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 58, 58);
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #333;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  border: 1px solid white;
+  margin: 3px 0;
+  padding: 8px 5px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.welcome h1,
+.welcome h2 {
+  text-align: center;
+  color: white;
+  font-family: arial black;
+}
+
+.welcome input {
+  border-color: white;
+}
+
+.wrapper td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tic-tac-toe {
+  margin: 2em;
+}
+
+.tic-tac-toe td {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+.tic-tac-toe .vertical-border {
+  border-left-color: white;
+  border-right-color: white;
+}
+
+.tic-tac-toe .horizontal-border {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+
+.tic-tac-toe .center-border {
+  border-color: white;
+}
+
+.welcome .p-name {
+  margin: 40px 0;
+  font-family: arial black;
+  color: white;
+}
+
+.d-table {
+  margin: 40px 0;
+  font-family: arial black;
+  color: white;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.d-table th,
+.d-table td {
+  border: 1px solid rgb(204, 204, 204);
+  padding: 2px;
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.cell {
+  font-family: arial black;
+  font-size: 20pt;
+  color: white;
+}
